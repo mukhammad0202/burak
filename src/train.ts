@@ -20,3 +20,19 @@
 // console.log(getHighestIndex([5, 21, 12, 21, 8]));
 
 console.log("hi");
+
+// ============================ H-TASK =============================================
+
+function getPositive(arr: number[]): string {
+  let positiveNums = "";
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > 0) {
+      positiveNums += arr[i];
+    }
+  }
+
+  return positiveNums;
+}
+
+console.log(getPositive([1, -4, 2]));
