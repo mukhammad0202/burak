@@ -37,3 +37,5 @@ mongoose
     });
   })
   .catch((err) => console.log("ERROR on connection MongoDB", err));
+
+console.log("hello world");
