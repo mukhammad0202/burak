@@ -34,3 +34,15 @@
 // }
 
 // console.log(getPositive([1, -4, 2]));
+
+// ============================ H2-TASK =============================================
+
+function getDigits(input: string): string {
+  return input
+    .split("")
+    .filter((char) => /\d/.test(char))
+    .join("");
+}
+
+const result = getDigits("m14i1t");
+console.log(result);
