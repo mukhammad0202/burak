@@ -37,12 +37,25 @@
 
 // ============================ H2-TASK =============================================
 
-function getDigits(input: string): string {
-  return input
-    .split("")
-    .filter((char) => /\d/.test(char))
-    .join("");
-}
+// function getDigits(input: string): string {
+//   return input
+//     .split("")
+//     .filter((char) => /\d/.test(char))
+//     .join("");
+// }
 
-const result = getDigits("m14i1t");
-console.log(result);
+// const result = getDigits("m14i1t");
+// console.log(result);
+
+/*
+Project Standards:
+ -Logging Standards
+ -Naming Standards:
+   function, methods, veriable => CAMEL case    goHome
+   class => PASCAL                              MemberService
+   folder => KEBAB
+   css => SNAKE                                 button_style
+ -Error handling
+   
+
+*/
