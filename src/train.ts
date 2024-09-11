@@ -64,3 +64,27 @@ Project Standards:
   GrapthQL API
  ...
 */
+
+// =============================== I-TASK =================
+
+function majorityElement(arr: number[]): number | null {
+  const countMap: { [key: number]: number } = {};
+
+  arr.forEach((num) => {
+    countMap[num] = (countMap[num] || 0) + 1;
+  });
+
+  let majorityElement = null;
+  let maxCount = 0;
+
+  for (const num in countMap) {
+    if (countMap[num] > maxCount) {
+      maxCount = countMap[num];
+      majorityElement = parseInt(num);
+    }
+  }
+
+  return majorityElement;
+}
+
+console.log(majorityElement([1, 2, 3, 4, 5, 4, 3, 4]));
