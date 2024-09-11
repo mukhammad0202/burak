@@ -53,9 +53,14 @@ Project Standards:
  -Naming Standards:
    function, methods, veriable => CAMEL case    goHome
    class => PASCAL                              MemberService
-   folder => KEBAB
+   folder, file => KEBAB
    css => SNAKE                                 button_style
  -Error handling
-   
+*/
 
+/*
+  Traditional API 
+  Rest API
+  GrapthQL API
+ ...
 */
