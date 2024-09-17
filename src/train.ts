@@ -67,24 +67,29 @@ Project Standards:
 
 // =============================== I-TASK =================
 
-function majorityElement(arr: number[]): number | null {
-  const countMap: { [key: number]: number } = {};
+// function majorityElement(arr: number[]): number | null {
+//   const countMap: { [key: number]: number } = {};
 
-  arr.forEach((num) => {
-    countMap[num] = (countMap[num] || 0) + 1;
-  });
+//   arr.forEach((num) => {
+//     countMap[num] = (countMap[num] || 0) + 1;
+//   });
 
-  let majorityElement = null;
-  let maxCount = 0;
+//   let majorityElement = null;
+//   let maxCount = 0;
 
-  for (const num in countMap) {
-    if (countMap[num] > maxCount) {
-      maxCount = countMap[num];
-      majorityElement = parseInt(num);
-    }
-  }
+//   for (const num in countMap) {
+//     if (countMap[num] > maxCount) {
+//       maxCount = countMap[num];
+//       majorityElement = parseInt(num);
+//     }
+//   }
 
-  return majorityElement;
-}
+//   return majorityElement;
+// }
 
-console.log(majorityElement([1, 2, 3, 4, 5, 4, 3, 4]));
+// console.log(majorityElement([1, 2, 3, 4, 5, 4, 3, 4]));
+
+/*
+  Traditional FrontEnd Development  =>  BSSR (Adminka)  =>  EJS
+  Modern Frontend Development       =>  SPA (Users' application) =>  React
+*/
