@@ -118,3 +118,21 @@ Project Standards:
     request join
     self destroy
 */
+
+// ============================== K-TASK ===============================
+
+function countVowels(str: string): number {
+  const vowels: string[] = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
+
+  let vowelCount: number = 0;
+  for (let char of str) {
+    if (vowels.includes(char)) {
+      vowelCount++;
+    }
+  }
+
+  return vowelCount;
+}
+
+console.log(countVowels("string"));
+console.log(countVowels("TypeScript"));
