@@ -96,18 +96,25 @@ Project Standards:
 
 // =============================== J-TASK =================
 
-function findLongestWord(sentence: string): string {
-  const words = sentence.split(" ");
+// function findLongestWord(sentence: string): string {
+//   const words = sentence.split(" ");
 
-  let longestWord = "";
+//   let longestWord = "";
 
-  for (const word of words) {
-    if (word.length > longestWord.length) {
-      longestWord = word;
-    }
-  }
+//   for (const word of words) {
+//     if (word.length > longestWord.length) {
+//       longestWord = word;
+//     }
+//   }
 
-  return longestWord;
-}
+//   return longestWord;
+// }
 
-console.log(findLongestWord("I come from Uzbekistan"));
+// console.log(findLongestWord("I come from Uzbekistan"));
+
+//==================
+
+/*
+    request join
+    self destroy
+*/
