@@ -58,7 +58,7 @@ Project Standards:
  -Error handling
 */
 
-/*
+/*  Request:
   Traditional API 
   Rest API
   GrapthQL API
@@ -89,7 +89,7 @@ Project Standards:
 
 // console.log(majorityElement([1, 2, 3, 4, 5, 4, 3, 4]));
 
-/*
+/* Frontend Development
   Traditional FrontEnd Development  =>  BSSR (Adminka)  =>  EJS
   Modern Frontend Development       =>  SPA (Users' application) =>  React
 */
@@ -114,25 +114,32 @@ Project Standards:
 
 //==================
 
-/*
+/* Cookie
     request join
     self destroy
 */
 
 // ============================== K-TASK ===============================
 
-function countVowels(str: string): number {
-  const vowels: string[] = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
+// function countVowels(str: string): number {
+//   const vowels: string[] = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
 
-  let vowelCount: number = 0;
-  for (let char of str) {
-    if (vowels.includes(char)) {
-      vowelCount++;
-    }
-  }
+//   let vowelCount: number = 0;
+//   for (let char of str) {
+//     if (vowels.includes(char)) {
+//       vowelCount++;
+//     }
+//   }
 
-  return vowelCount;
-}
+//   return vowelCount;
+// }
 
-console.log(countVowels("string"));
-console.log(countVowels("TypeScript"));
+// console.log(countVowels("string"));
+// console.log(countVowels("TypeScript"));
+
+/*
+Validation:
+Frontend validation,
+Backend validation
+Database validation
+ */
