@@ -22,8 +22,16 @@ routerAdmin.get(
   restaurantController.verifyRestaurant,
   productController.getAllProducts
 );
-routerAdmin.post("/product/create", productController.createNewProduct);
-routerAdmin.get("/product/:id", productController.updateChosenProduct);
+routerAdmin.post(
+  "/product/create",
+  restaurantController.verifyRestaurant,
+  productController.createNewProduct
+);
+routerAdmin.get(
+  "/product/:id",
+  restaurantController.verifyRestaurant,
+  productController.updateChosenProduct
+);
 
 // Users
 
