@@ -143,3 +143,14 @@ Frontend validation,
 Backend validation
 Database validation
  */
+
+// ================================= L-TASK ==================================
+
+function reverseSentence(sentence: string): string {
+  return sentence
+    .split(" ")
+    .map((word) => word.split("").reverse().join(""))
+    .join(" ");
+}
+
+console.log(reverseSentence("we like coding!"));
