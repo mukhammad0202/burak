@@ -146,11 +146,23 @@ Database validation
 
 // ================================= L-TASK ==================================
 
-function reverseSentence(sentence: string): string {
-  return sentence
-    .split(" ")
-    .map((word) => word.split("").reverse().join(""))
-    .join(" ");
+// function reverseSentence(sentence: string): string {
+//   return sentence
+//     .split(" ")
+//     .map((word) => word.split("").reverse().join(""))
+//     .join(" ");
+// }
+
+// console.log(reverseSentence("we like coding!"));
+
+// ================================= M-TASK ==================================
+
+function getSquareNumbers(arr: number[]): { number: number; square: number }[] {
+  return arr.map((num) => ({
+    number: num,
+    square: num * num,
+  }));
 }
 
-console.log(reverseSentence("we like coding!"));
+const result = getSquareNumbers([1, 2, 3]);
+console.log(result);
