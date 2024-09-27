@@ -157,12 +157,23 @@ Database validation
 
 // ================================= M-TASK ==================================
 
-function getSquareNumbers(arr: number[]): { number: number; square: number }[] {
-  return arr.map((num) => ({
-    number: num,
-    square: num * num,
-  }));
+// function getSquareNumbers(arr: number[]): { number: number; square: number }[] {
+//   return arr.map((num) => ({
+//     number: num,
+//     square: num * num,
+//   }));
+// }
+
+// const result = getSquareNumbers([1, 2, 3]);
+// console.log(result);
+
+// ================================= N-TASK ==================================
+
+function palindromCheck(str: string): boolean {
+  const reversedStr = str.split("").reverse().join("");
+
+  return str === reversedStr;
 }
 
-const result = getSquareNumbers([1, 2, 3]);
-console.log(result);
+console.log(palindromCheck("dad"));
+console.log(palindromCheck("son"));
