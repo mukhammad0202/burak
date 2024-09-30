@@ -59,7 +59,7 @@ Project Standards:
 */
 
 /*  Request:
-  Traditional API 
+  Traditional API ( form POST )
   Rest API
   GrapthQL API
  ...
