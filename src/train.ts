@@ -169,11 +169,24 @@ Database validation
 
 // ================================= N-TASK ==================================
 
-function palindromCheck(str: string): boolean {
-  const reversedStr = str.split("").reverse().join("");
+// function palindromCheck(str: string): boolean {
+//   const reversedStr = str.split("").reverse().join("");
 
-  return str === reversedStr;
+//   return str === reversedStr;
+// }
+
+// console.log(palindromCheck("dad"));
+// console.log(palindromCheck("son"));
+
+// ================================= O-TASK ==================================
+
+function calculateSumOfNumbers(arr: any[]): number {
+  return arr.reduce((sum, value) => {
+    if (typeof value === "number") {
+      return sum + value;
+    }
+    return sum;
+  }, 0);
 }
 
-console.log(palindromCheck("dad"));
-console.log(palindromCheck("son"));
+console.log(calculateSumOfNumbers([10, "10", { son: 10 }, true, 35]));
