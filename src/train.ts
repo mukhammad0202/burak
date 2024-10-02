@@ -180,13 +180,22 @@ Database validation
 
 // ================================= O-TASK ==================================
 
-function calculateSumOfNumbers(arr: any[]): number {
-  return arr.reduce((sum, value) => {
-    if (typeof value === "number") {
-      return sum + value;
-    }
-    return sum;
-  }, 0);
+// function calculateSumOfNumbers(arr: any[]): number {
+//   return arr.reduce((sum, value) => {
+//     if (typeof value === "number") {
+//       return sum + value;
+//     }
+//     return sum;
+//   }, 0);
+// }
+
+// console.log(calculateSumOfNumbers([10, "10", { son: 10 }, true, 35]));
+
+// ================================= P-TASK ==================================
+
+function objectToArray(obj: { [key: string]: any }): [string, any][] {
+  return Object.entries(obj);
 }
 
-console.log(calculateSumOfNumbers([10, "10", { son: 10 }, true, 35]));
+const result = objectToArray({ a: 10, b: 20 });
+console.log(result);
