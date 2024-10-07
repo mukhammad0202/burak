@@ -216,3 +216,4 @@ function calculate(expression: string): number {
 
 console.log(calculate("1+3"));
 console.log(calculate("92+119"));
+console.log(calculate("88+192"));
