@@ -193,9 +193,26 @@ Database validation
 
 // ================================= P-TASK ==================================
 
-function objectToArray(obj: { [key: string]: any }): [string, any][] {
-  return Object.entries(obj);
+// function objectToArray(obj: { [key: string]: any }): [string, any][] {
+//   return Object.entries(obj);
+// }
+
+// const result = objectToArray({ a: 10, b: 20 });
+// console.log(result);
+
+// ================================= Q-TASK ==================================
+// function hasProperty(obj: object, prop: string): boolean {
+//   return obj.hasOwnProperty(prop);
+// }
+
+// console.log(hasProperty({ name: "BMW", model: "M3" }, "model"));
+// console.log(hasProperty({ name: "BMW", model: "M3" }, "year"));
+
+// ================================= R-TASK ==================================
+
+function calculate(expression: string): number {
+  return eval(expression);
 }
 
-const result = objectToArray({ a: 10, b: 20 });
-console.log(result);
+console.log(calculate("1+3"));
+console.log(calculate("92+119"));
