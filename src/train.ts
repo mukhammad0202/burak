@@ -210,10 +210,54 @@ Database validation
 
 // ================================= R-TASK ==================================
 
-function calculate(expression: string): number {
-  return eval(expression);
+// function calculate(expression: string): number {
+//   return eval(expression);
+// }
+
+// console.log(calculate("1+3"));
+// console.log(calculate("92+119"));
+// console.log(calculate("88+192"));
+
+// ================================= S-TASK ==================================
+
+// function missingNumber(nums: number[]): number {
+//   const n = nums.length;
+//   const expectedSum = (n * (n + 1)) / 2;
+//   const actualSum = nums.reduce((acc, num) => acc + num, 0);
+
+//   return expectedSum - actualSum;
+// }
+
+// console.log(missingNumber([3, 0, 1]));
+
+// ================================= T-TASK ==================================
+
+function mergeSortedArrays(arr1: number[], arr2: number[]): number[] {
+  let mergedArray: number[] = [];
+  let i = 0;
+  let j = 0;
+
+  while (i < arr1.length && j < arr2.length) {
+    if (arr1[i] < arr2[j]) {
+      mergedArray.push(arr1[i]);
+      i++;
+    } else {
+      mergedArray.push(arr2[j]);
+      j++;
+    }
+  }
+
+  while (i < arr1.length) {
+    mergedArray.push(arr1[i]);
+    i++;
+  }
+
+  while (j < arr2.length) {
+    mergedArray.push(arr2[j]);
+    j++;
+  }
+
+  return mergedArray;
 }
 
-console.log(calculate("1+3"));
-console.log(calculate("92+119"));
-console.log(calculate("88+192"));
+console.log(mergeSortedArrays([0, 3, 4, 31], [4, 6, 30]));
