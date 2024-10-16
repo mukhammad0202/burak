@@ -264,15 +264,30 @@ Database validation
 
 // ================================= U-TASK ==================================
 
-function sumOdds(n: number): number {
-  let count = 0;
-  for (let i = 0; i <= n; i++) {
-    if (i % 2 !== 0) {
-      count++;
-    }
+// function sumOdds(n: number): number {
+//   let count = 0;
+//   for (let i = 0; i <= n; i++) {
+//     if (i % 2 !== 0) {
+//       count++;
+//     }
+//   }
+//   return count;
+// }
+
+// console.log(sumOdds(9));
+// console.log(sumOdds(11));
+
+// ================================= V-TASK ==================================
+
+function countChars(str: string): Record<string, number> {
+  const charCount: Record<string, number> = {};
+
+  for (const char of str) {
+    charCount[char] = (charCount[char] || 0) + 1;
   }
-  return count;
+
+  return charCount;
 }
 
-console.log(sumOdds(9));
-console.log(sumOdds(11));
+console.log(countChars("hello"));
+console.log(countChars("hi MIT"));
