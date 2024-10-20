@@ -279,15 +279,17 @@ Database validation
 
 // ================================= V-TASK ==================================
 
-function countChars(str: string): Record<string, number> {
-  const charCount: Record<string, number> = {};
+// function countChars(str: string): Record<string, number> {
+//   const charCount: Record<string, number> = {};
 
-  for (const char of str) {
-    charCount[char] = (charCount[char] || 0) + 1;
-  }
+//   for (const char of str) {
+//     charCount[char] = (charCount[char] || 0) + 1;
+//   }
 
-  return charCount;
-}
+//   return charCount;
+// }
 
-console.log(countChars("hello"));
-console.log(countChars("hi MIT"));
+// console.log(countChars("hello"));
+// console.log(countChars("hi MIT"));
+
+// ================================= -TASK ==================================
