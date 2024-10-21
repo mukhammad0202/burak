@@ -294,17 +294,47 @@ Database validation
 
 // ================================= W-TASK ==================================
 
-function chunkArray<T>(arr: T[], chunkSize: number): T[][] {
-  let result: T[][] = [];
+// function chunkArray<T>(arr: T[], chunkSize: number): T[][] {
+//   let result: T[][] = [];
 
-  for (let i = 0; i < arr.length; i += chunkSize) {
-    result.push(arr.slice(i, i + chunkSize));
+//   for (let i = 0; i < arr.length; i += chunkSize) {
+//     result.push(arr.slice(i, i + chunkSize));
+//   }
+
+//   return result;
+// }
+
+// const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// const chunkSize = 3;
+
+// console.log(chunkArray(array, chunkSize));
+
+// ================================= W-TASK ==================================
+
+function countOccurrences(obj: any, keyToFind: string): number {
+  let count = 0;
+
+  function recurse(obj: any) {
+    for (let key in obj) {
+      if (key === keyToFind) {
+        count++;
+      }
+      if (typeof obj[key] === "object" && obj[key] !== null) {
+        recurse(obj[key]);
+      }
+    }
   }
 
-  return result;
+  recurse(obj);
+  return count;
 }
 
-const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-const chunkSize = 3;
+const exampleObject = {
+  model: "Bugatti",
+  steer: {
+    model: "HANKOOK",
+    size: 30,
+  },
+};
 
-console.log(chunkArray(array, chunkSize));
+console.log(countOccurrences(exampleObject, "model"));
