@@ -341,12 +341,14 @@ Database validation
 
 // ================================= Y-TASK ==================================
 
-function findIntersection(arr1: number[], arr2: number[]): number[] {
-  const set1 = new Set(arr1);
+// function findIntersection(arr1: number[], arr2: number[]): number[] {
+//   const set1 = new Set(arr1);
 
-  const intersection = arr2.filter((item) => set1.has(item));
+//   const intersection = arr2.filter((item) => set1.has(item));
 
-  return Array.from(new Set(intersection));
-}
+//   return Array.from(new Set(intersection));
+// }
 
-console.log(findIntersection([1, 2, 3], [3, 2, 0]));
+// console.log(findIntersection([1, 2, 3], [3, 2, 0]));
+
+// ================================= -TASK ==================================
