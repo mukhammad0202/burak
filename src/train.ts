@@ -309,7 +309,7 @@ Database validation
 
 // console.log(chunkArray(array, chunkSize));
 
-// ================================= W-TASK ==================================
+// ================================= X-TASK ==================================
 
 function countOccurrences(obj: any, keyToFind: string): number {
   let count = 0;
