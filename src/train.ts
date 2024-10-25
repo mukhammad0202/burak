@@ -311,30 +311,42 @@ Database validation
 
 // ================================= X-TASK ==================================
 
-function countOccurrences(obj: any, keyToFind: string): number {
-  let count = 0;
+// function countOccurrences(obj: any, keyToFind: string): number {
+//   let count = 0;
 
-  function recurse(obj: any) {
-    for (let key in obj) {
-      if (key === keyToFind) {
-        count++;
-      }
-      if (typeof obj[key] === "object" && obj[key] !== null) {
-        recurse(obj[key]);
-      }
-    }
-  }
+//   function recurse(obj: any) {
+//     for (let key in obj) {
+//       if (key === keyToFind) {
+//         count++;
+//       }
+//       if (typeof obj[key] === "object" && obj[key] !== null) {
+//         recurse(obj[key]);
+//       }
+//     }
+//   }
 
-  recurse(obj);
-  return count;
+//   recurse(obj);
+//   return count;
+// }
+
+// const exampleObject = {
+//   model: "Bugatti",
+//   steer: {
+//     model: "HANKOOK",
+//     size: 30,
+//   },
+// };
+
+// console.log(countOccurrences(exampleObject, "model"));
+
+// ================================= Y-TASK ==================================
+
+function findIntersection(arr1: number[], arr2: number[]): number[] {
+  const set1 = new Set(arr1);
+
+  const intersection = arr2.filter((item) => set1.has(item));
+
+  return Array.from(new Set(intersection));
 }
 
-const exampleObject = {
-  model: "Bugatti",
-  steer: {
-    model: "HANKOOK",
-    size: 30,
-  },
-};
-
-console.log(countOccurrences(exampleObject, "model"));
+console.log(findIntersection([1, 2, 3], [3, 2, 0]));
