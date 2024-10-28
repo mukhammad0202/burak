@@ -351,4 +351,11 @@ Database validation
 
 // console.log(findIntersection([1, 2, 3], [3, 2, 0]));
 
-// ================================= -TASK ==================================
+// ================================= Z-TASK ==================================
+
+function sumEvens(arr: number[]): number {
+  return arr.filter((num) => num % 2 === 0).reduce((sum, num) => sum + num, 0);
+}
+
+console.log(sumEvens([1, 2, 3]));
+console.log(sumEvens([4, 5, 6, 7, 8]));
