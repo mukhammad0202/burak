@@ -353,9 +353,19 @@ Database validation
 
 // ================================= Z-TASK ==================================
 
-function sumEvens(arr: number[]): number {
-  return arr.filter((num) => num % 2 === 0).reduce((sum, num) => sum + num, 0);
+// function sumEvens(arr: number[]): number {
+//   return arr.filter((num) => num % 2 === 0).reduce((sum, num) => sum + num, 0);
+// }
+
+// console.log(sumEvens([1, 2, 3]));
+// console.log(sumEvens([4, 5, 6, 7, 8]));
+
+// ================================= ZA-TASK ==================================
+
+type Person = { age: number };
+
+function sortByAge(arr: Person[]): Person[] {
+  return arr.sort((a, b) => a.age - b.age);
 }
 
-console.log(sumEvens([1, 2, 3]));
-console.log(sumEvens([4, 5, 6, 7, 8]));
+console.log(sortByAge([{ age: 23 }, { age: 21 }, { age: 13 }]));
