@@ -362,10 +362,27 @@ Database validation
 
 // ================================= ZA-TASK ==================================
 
-type Person = { age: number };
+// type Person = { age: number };
 
-function sortByAge(arr: Person[]): Person[] {
-  return arr.sort((a, b) => a.age - b.age);
+// function sortByAge(arr: Person[]): Person[] {
+//   return arr.sort((a, b) => a.age - b.age);
+// }
+
+// console.log(sortByAge([{ age: 23 }, { age: 21 }, { age: 13 }]));
+
+// ================================= ZB-TASK ==================================
+
+// function randomBetween(min: number, max: number): number {
+//   return Math.floor(Math.random() * (max - min + 1)) + min;
+// }
+
+// console.log(randomBetween(30, 50));
+
+// ================================= ZC-TASK ==================================
+
+function celsiusToFahrenheit(celsius: number): number {
+  return (celsius * 9) / 5 + 32;
 }
 
-console.log(sortByAge([{ age: 23 }, { age: 21 }, { age: 13 }]));
+console.log(celsiusToFahrenheit(0));
+console.log(celsiusToFahrenheit(10));
