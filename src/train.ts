@@ -380,9 +380,24 @@ Database validation
 
 // ================================= ZC-TASK ==================================
 
-function celsiusToFahrenheit(celsius: number): number {
-  return (celsius * 9) / 5 + 32;
+// function celsiusToFahrenheit(celsius: number): number {
+//   return (celsius * 9) / 5 + 32;
+// }
+
+// console.log(celsiusToFahrenheit(0));
+// console.log(celsiusToFahrenheit(10));
+
+// ================================= -TASK ==================================
+
+function changeNumberInArray(
+  index: number,
+  arr: number[],
+  newValue: number
+): number[] {
+  if (index >= 0 && index < arr.length) {
+    arr[index] = newValue;
+  }
+  return arr;
 }
 
-console.log(celsiusToFahrenheit(0));
-console.log(celsiusToFahrenheit(10));
+console.log(changeNumberInArray(1, [1, 3, 7, 2], 2));
