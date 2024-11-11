@@ -389,15 +389,24 @@ Database validation
 
 // ================================= -TASK ==================================
 
-function changeNumberInArray(
-  index: number,
-  arr: number[],
-  newValue: number
-): number[] {
-  if (index >= 0 && index < arr.length) {
-    arr[index] = newValue;
-  }
-  return arr;
+// function changeNumberInArray(
+//   index: number,
+//   arr: number[],
+//   newValue: number
+// ): number[] {
+//   if (index >= 0 && index < arr.length) {
+//     arr[index] = newValue;
+//   }
+//   return arr;
+// }
+
+// console.log(changeNumberInArray(1, [1, 3, 7, 2], 2));
+
+// ================================= -TASK ==================================
+
+function removeDuplicate(str: string): string {
+  const uniqueChars = new Set(str);
+  return Array.from(uniqueChars).join("");
 }
 
-console.log(changeNumberInArray(1, [1, 3, 7, 2], 2));
+console.log(removeDuplicate("stringg"));
