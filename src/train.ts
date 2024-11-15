@@ -404,9 +404,18 @@ Database validation
 
 // ================================= -TASK ==================================
 
-function removeDuplicate(str: string): string {
-  const uniqueChars = new Set(str);
-  return Array.from(uniqueChars).join("");
+// function removeDuplicate(str: string): string {
+//   const uniqueChars = new Set(str);
+//   return Array.from(uniqueChars).join("");
+// }
+
+// console.log(removeDuplicate("stringg"));
+
+// ================================= -TASK ==================================
+
+function convertToSnakeCase(input: string): string {
+  return input.trim().toLowerCase().replace(/\s+/g, "_");
 }
 
-console.log(removeDuplicate("stringg"));
+const result = convertToSnakeCase("name should be a string");
+console.log(result);
